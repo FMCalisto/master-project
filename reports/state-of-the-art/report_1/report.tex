@@ -82,12 +82,12 @@ Francisco Maria \textsc{Calisto} % Your name
 \begin{minipage}{0.4\textwidth}
 \begin{flushright} \large
 \emph{Coordinator:} \\
-Professor Jacinto \textsc{Peixoto} % Coordinator's Name
+Jacinto \textsc{Peixoto} % Coordinator's Name
 \end{flushright}
 ~
 \begin{flushright} \large
 \emph{Co-Coordinator:} \\
-Professor Daniel \textsc{Gon\c{c}alves} % Co-Coordinator's Name
+Daniel \textsc{Gon\c{c}alves} % Co-Coordinator's Name
 \end{flushright}
 \end{minipage}\\[2cm]
 
@@ -99,15 +99,30 @@ Professor Daniel \textsc{Gon\c{c}alves} % Co-Coordinator's Name
 %	DATE SECTION
 %----------------------------------------------------------------------------------------
 
-{\large 07/03/2016}\\[1cm] % Date, change the \today to a set date if you want to be precise
+{\large 10/03/2016}\\[1cm] % Date, change the \today to a set date if you want to be precise
 
 %----------------------------------------------------------------------------------------
 %	LOGO SECTION
 %----------------------------------------------------------------------------------------
 
-\includegraphics{ist-logo.png}\\[0.5cm] % Include a department/university logo - this will require the graphicx package
+% \includegraphics{ist-logo.png}\\[0.5cm] % Include a department/university logo - this will require the graphicx package
 
-\includegraphics{isr-logo.png}\\[0.5cm] % Include a department/university logo - this will require the graphicx package
+% \includegraphics{isr-logo.png}\\[0.5cm] % Include a department/university logo - this will require the graphicx package
+
+\begin{figure}
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.5\linewidth]{ist-logo.png}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.5\linewidth]{isr-logo.png}
+  \label{fig:sub2}
+\end{subfigure}
+\label{fig:test}
+\end{figure}
  
 %----------------------------------------------------------------------------------------
 
@@ -153,13 +168,61 @@ The first step in successfully analysing the digital image is to specify the exa
 
 \section{Introductory Related Work}
 
-Other systems have been designed to provide more direct support for managing multiple concurrent activities associated with a large amount of digital material and tools. In our discussion below, we will follow clinical imaging tools and non-clinical imaging tools that propose for a multimodal and non-multimodal views.
+Some systems have been designed to provide more direct support for managing multiple concurrent activities associated with a large amount of digital material and tools. In our discussion below, we will follow clinical imaging tools and non-clinical imaging tools that propose for a multimodal and non-multimodal views.
+
+\subsection{Activity-Based Computing}
 
 For this paper report we approach many others like an Activity-Based Computing (ABC) for Medical Work in Hospitals [12] that presents the concept, which seeks to create computational support for human activities contributing to the growing research on support for human activities, mobility, collaboration, and context-aware computing. To sum up, activity-based computing builds and expands upon prior work within each of the areas described as activity management, virtual window management, collaboration support systems and context-awareness. However the last topics, it does not approach a multimodal view of images, but it was great on other fields of understanding the context and most of the problem/solutions.
 
+\subsection{Fine Needle Aspirate}
+
 By using computer based image analysing we research a Breast Cytology Diagnosis Via Digital Image Analysis [1] paper work that brings us an improvement on the diagnostic accuracy of breast fine needle aspirate (FNA) goal where an interactive computer system has been developed for evaluating cytologic features derived directly from a digital scan of breast FNA slides. The system uses computer vision technology techniques to analyse cell nuclei and classifies them using an inductive method based on linear programming.
 
+\clearpage
+
 The researched accuracy for medical imaging breast cancer diagnosis from FNAs varies considerably. Reported accuracy for visually diagnosing breast cancer from FNAs varies considerably. Giard and Hermans [13] researched on FNA performance parameters and found some sensitivities. The FNA diagnosis is highly operator-dependent and emphasised the need for developing individual performance characteristics for those doing this test. One goal of the present work is to improve the diagnostic accuracy of FNA by increasing its objectivity and thereby making it less operator-dependant. This image analysis and machine learning applied to breast cancer diagnosis and prognosis [14] study introduce us to a breast cancer diagnosis and prognosis by computer and to the value of aspiration cytologic examination of the breast into a statistical review of the medical literature [13].
+
+\subsection{Picture Archiving and Communication Systems}
+
+Medical services in current-time rely heavily on digital imaging technology due to image modalities utilised in medical field such as the computer Ecography, Mamography and Magnetic Resonance Imaging (MRI). These techniques require image-processing tools and digital management that has been the primary reason for development of Picture Archiving and Communication Systems (PACS) [15]. This technology provides economical storage and convenient access to images from multiple modalities where images are transmitted digitally via PACS where it eliminates the need to manually file, retrieve, or transport film jackets. The universal format for PACS image storage and transfer is Digital Imaging and Communications in Medicine (DICOM) [16] format.
+
+A paper talking about web based medical images, data processing and management systems, present an application of database and functional imaging [17] that runs through the network and internet browser that has similar ability to the PACS yet having the advantages of being an online system can be viewed as archiving one step closer towards total online medical imaging system and online imaging in general. Despite the excellent information that this paper offer in the field of this research, we are more concerned with analysing the problem in a multimodality shed of image and interface surround, than this distribution of information side.
+
+\subsection{Computer Aided Diagnosis}
+
+The Picture Archiving and Communication System (PACS) [15] faces ever-growing adoption in hospitals and clinics worldwide [18] as we seen before. Digitalisation process and sharing of medical images is progressively replacing the use of tomography films, thus reducing costs and increasing the possibility of remote medical diagnosis through telemedicine solutions. Inline with this trend, Computer Aided Diagnosis (CAD) [19] is also gaining ground. CAD is an interdisciplinary technology combining elements of machine learn and computer vision with radiological image processing. A typical application is the detection of a tumor. For instance, some hospitals use CAD to support preventive medical check-ups in mammography (diagnosis of breast cancer). CAD typically intends to provide suggested diagnosis based on automatic quantitative analysis of medical images in order to aid physicians in their final diagnosis.
+
+The computer suggested output may be useful in situations where the human visual system might fail or in case of fatigue of the physicians, alerting on possible well-known problems. According to a computer-aided diagnosis in medical imaging article [20], there are two CAD system types. The first type of CAD system assists with lesion detection, searching for abnormal standards in images like micro-calcifications groups in mammography images. The second type of CAD system assists the diagnosis, analysing the quantification of image characteristics where extracting information about a lesion shape may help to determine if a tumor is malignant or benign.
+
+\clearpage
+
+\section{Mobile Devices}
+
+Mobile devices are increasingly being incorporated (Figure 3) onto Picture Archiving and Communication Systems (PACS). Previous work on medical image access using mobile devices essentially focuses on enabling the visualisation of the medical images at the mobile devices. In contrast, it can be proposed and developed a distributed system that allows medical image analysis using mobile devices. As a proof-of-concept, based on a mobile distributed system [20], which article develop a tool for dental implant simulation using mobile devices. There is also a discussion about the perspectives of extending the current system to incorporate Computer Aided Diagnosis (CAD) algorithms in it.
+
+% Commands to include a figure:
+\begin{figure}[!hbt]
+\centering
+\includegraphics[width=0.75\textwidth]{mobile.png}
+\caption{\label{fig:frog}aycan mobile
+}
+\end{figure}
+
+Recently, mobile devices, such as PDAs, are being increasingly incorporated to PACS. Typically the flexibility on the visualisation of medical images storage in PACS, offered by a mobile access, is useful in patient care areas and emergency situations. This feature helps healthcare practitioners to have access to medical images at least for a preliminary image analysis in cases where searching for a dedicated terminal to access the images for a detailed and complete analysis is neither practical nor feasible.
+
+The research proposes a distributed system that enables medical image analysis using mobile devices, as well as, the growth in the CAD area combined with the increase in processing power of the mobile devices and in the capacity of wireless networks favours the emergence of new developments integrating those technologies.
+
+The communication between the mobile devices and the image server adopts web service technology [21]. To validate the distributed system processing power, speed, and feasibility we develop a tool for medical image analysis with mobile devices dedicated to assist in breast cancer visualisation diagnosis.
+
+The deployed simulation tool allows the medic using a mobile device such as a PDA to determine the evolution of a patient like masses and calcifications location, preventing for instance the need for the doctor to move from analysis machine to the computer. After determine some critical areas, the doctor can visualise the analyse model of the result also using the mobile device. Results show that the use of mobile devices in hospital environments to assist the diagnosis and patient treatment is feasible. Other observation is that the mobile devices can be used to other tasks, like image model rendering, not only image visualisation.
+
+\section{Conclusions}
+
+There is a lot of information concerning work in development for clinical user interfaces on images tools views, but, in fact, there is little in multimodality image and its display in breast cancer diagnosis fields.
+
+This article is a first essay, of many, to what will be the master thesis related work dissertation and state of the art [22]. It describe related systems that have been designed to provide more direct support and fundament to our research. We follow at most clinical imaging tools and personal computer-based interfaces as well as a hypothetical solution of implementation with mobile interfaces where it can help us understand the right user interface solution.
+
+In short, we analyse and rehearsed what was the first approach to the subject-matter literature on a state of the art milestone of the project to understand and to investigate the various innovations and topics made in this field of research.
 
 \clearpage
 
@@ -178,6 +241,14 @@ The researched accuracy for medical imaging breast cancer diagnosis from FNAs va
 \bibitem{} BARDRAM, J. E. 2009. Activity-Based Computing for Medical Work in Hospitals. \emph{ACM Transactions on Computer-Human Interaction}.
 \bibitem{} Giard RWM, Hermans J. 1992. The value of aspiration cytologic examination of the breast. A statistical review of the medical literature. \emph{Cancer.69:2104-2110}.
 \bibitem{} William H. Wolberg M.D. W. Nick Street M.S. and Olvi L. Mangasarian Ph.D. 2009. Activity-Based Computing for Medical Work in Hospitals. \emph{ACM Transactions on Computer-Human Interaction}.
+\bibitem{} Oosterwijk, Herman. 2004. PACS Fundamentals. \emph{Aubrey: OTech Inc}. ISBN 978-0-9718867-3-5.
+\bibitem{} Mustra, Mario; Delac, Kresimir; Grgic, Mislav. September, 2008. Overview of the DICOM Standard. \emph{ELMAR, 2008. 50th International Symposium. Zadar, Croatia}. pp. 39–44. ISBN 978-1-4244-3364-3.
+\bibitem{} Jinman Kim, David D. Feng, Tom W. Cai. 2000. A Web Based Medical Image Data processing and Management System. \emph{Conferencesin Research and Practice in Information Technology}. Vol. 2.
+\bibitem{} H. U. Lemke. PACS developments in Europe. \emph{Computerized Medical Imaging and Graphics}, 27:111–120, 2003.
+\bibitem{} Maryellen L. Giger; Nico Karssemeijer. September, 2008. Computer-Aided Diagnosis. \emph{Proceedings of SPIE}. 1605-7422, v. 6915.
+\bibitem{} B. Correa, E. Ishikawa; A. Ziviani; M. Faria. 2008. Medical Image Analysis using Mobile Devices. \emph{SAC’08 March 1620, 2008, Fortaleza, Cear´a, Brazil}. ACM 9781595937537/08/0003.
+\bibitem{} Web Service. Electronically available information at. \emph{http://www.w3.org/2002/ws/}.
+\bibitem{} Timothy Borchers. Persuasion in the Media Age: \emph{Third Edition (2012)}, p. 85.
 \end{thebibliography}
 
 \end{document}
