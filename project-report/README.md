@@ -277,6 +277,9 @@ You can use any other online latex editor, but it must support glossaries packag
 ## Author
 Samuel Coelho ([samfcmc](https://github.com/samfcmc))
 
+## Modifier
+[Francisco Maria Calisto](http://franciscocalisto.me/) ([FMCalisto](https://github.com/FMCalisto))
+
 ## Contribute ;)
 Thanks to [@mvpgomes](https://github.com/mvpgomes) that started this template and did most of the work.
 I am just publishing it on github and improving its structure a bit.
