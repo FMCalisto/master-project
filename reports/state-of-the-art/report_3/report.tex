@@ -99,7 +99,7 @@ Daniel \textsc{Gon\c{c}alves} % Co-Coordinator's Name
 %	DATE SECTION
 %----------------------------------------------------------------------------------------
 
-{\large 03/05/2016}\\[1cm] % Date, change the \today to a set date if you want to be precise
+{\large 28/05/2016}\\[1cm] % Date, change the \today to a set date if you want to be precise
 
 %----------------------------------------------------------------------------------------
 %	LOGO SECTION
@@ -133,25 +133,91 @@ Daniel \textsc{Gon\c{c}alves} % Co-Coordinator's Name
 
 \section{Abstract}
 
+Breast cancer is an abnormal growth of cells in the breast, usually in the inner lining of the milk ducts or lobules. It is currently the most common type of cancer in women in developed and developing countries. The number of women affected by breast cancer is gradually increasing and remains as a significant health concern. Researchers are continuously working to develop novel techniques to detect early stages of breast cancer. This project proposes the development of a methodology for detection and cancer targeting breast using multimodality medical imaging and textual information.
 
+\section{Introduction}
+
+Computer-aided  diagnosis  often  implies  processing large and high dimensional datasets, for instance, high-resolution volumes containing millions of voxels.
+
+Visualisation and analysis of such data can be very time demanding for physicians but also very computationally expensive for machines assisting diagnosis tasks. Fortunately, in many cases the relevant information for an application can be represented in lower dimensional spaces. If appropriately  chosen and designed, dimensionality reduction methods will not only decrease the processing time but also facilitate any posterior analysis. Therefore, they can be of great use to a variety of CAD (Computer Aided Diagnosis)  applications, ranging  from  general problems such as classification and visualisation, to more specific ones like multi-modal registration or motion compensation.
+
+Dimensionality reduction in CAD has relied mainly on linear methods and linear  methods  are  however not suitable for handling non-linear complex relationships among the data samples. Non-linear approaches based on manifold learning are a good alternative for dimensionality reduction in such cases.
+
+Medical Imaging Multimodality Breast Cancer Diagnosis User Interface (MIMBCD-UI)  registration  consists  in  finding  a map between images of the same scene acquired with different imaging modalities. The standard approach to multi-modal registration is to use sophisticated similarity metrics such as mutual information to compare the images.
+
+\clearpage
 
 \section{Overview}
 
+Specifically, this project deals with the use of a recently proposed technique in literature: Deep Convolutional Neural Networks (CNNs).
 
+These deep networks will incorporate information from several different modes: magnetic resonance imaging volumes (MRI), ultrasound images, mammographic images (both views CC and MLO) and text.
 
-\section{Related Work}
+The proposed algorithm, called for multimodality CNNs (MMCNNs) will have the ability to process multimodal information at an unified and sustained manner.
 
+This methodology needs to "learn" what are the masses and calcifications.
 
+So that is necessary to collect the ground truth, or notes of the masses and calcifications provided by medical experts.
+
+For the collection of these notes, the design and development of an interface is necessary allows the user (in this case, the medical specialist) to display various types of image (i.e., ultrasound, MRI and mammography), and that also allows for user interaction, particularly in providing the notes of the masses and calcifications.
+
+For these reasons, it is crucial for the development of this project, cooperation with experts providing the above notes.
+
+\clearpage
+
+\section{Goals}
+
+Development of the User Interface for Diagnosis of Breast Cancer in Medical Imaging Multimodality.
+
+It is intended to develop an User Interface for monitoring and diagnosis of breast lesions in various medical imaging modalities. Imaging modalities to include in the work are:
+
+Mammography (including the views caudal-skull and oblique);
+Ultrasound;
+MRI volumes;
+With protocol already signed with the Fernando Fonseca Hospital, it is intended that this interface has two features:
+
+(i) - Build a database with annotations in multimodality mammography image.
+
+Provide the user (doctor) facility to draw / write down masses and calcifications, as well as the corresponding BI-RADS for each imaging modality. This annotation process can be built during the examination, and thus it is possible to build a database of medical notes.
+
+(ii) - Follow-up of the patient. With this feature is to allow the doctor automate a multimodality inspection for the patient.
+
+Based on the patient's identification (eg, via a query on the ID), and for a given type of mammography imaging, the system must return all images of this patient over a period of time (eg. Two or more years) entered by the doctor, and show these images (pre-recorded). This feature is critical for diagnosis because it allows, through information visualisation, observing not only the calcifications density and the morphological evolution of the masses in that time period.
 
 \clearpage
 
 \section{Conclusions}
 
+A review of the state of the art in the field is provided showing the increasing interest of researchers in the domain and a wide range applications where these methods can be applied.
 
+Cancer is projected to become the world's leading cause of death by 2016, with the burden of disease shifting further towards medically underserved populations in industrialised countries and the developing world.
+
+New approaches are required across the spectrum of cancer management, in prevention, diagnosis, treatment, education and care. If developed and tested appropriately, optical imaging technologies can play an important role in several aspects, from providing objective diagnostic screening at the community healthcare level, to enabling pathology guidance in the clinical setting.
+
+Importantly, by delivering these technical capabilities within cost-effective platforms, the impact on public health can be magnified through expanding patient access to previously unreachable healthcare systems.
 
 \clearpage
 
 \begin{thebibliography}{}
 \bibitem{} Michael G. Kahn, Janette Coble, and Matthew Orland. 1998. Keep no secrets and tell no lies: computer interfaces in clinical care. In \emph{CHI 98 Cconference Summary on Human Factors in Computing Systems} (CHI '98). ACM, New York, NY, USA, 100-101. DOI=http://dx.doi.org/10.1145/286498.286553
 \end{thebibliography}
+
+
+% http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.250.4530&rep=rep1&type=pdf
+
+% http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2906814/
+
+% https://books.google.pt/books?id=oXi9AQAAQBAJ&pg=PT404&lpg=PT404&dq=Medical+Imaging+Multimodality+Breast+Cancer+Diagnosis+User+Interface&source=bl&ots=KTVU92Olq5&sig=xGcg66t0ZTfIeMgMY9wnx9VwfGk&hl=en&sa=X&redir_esc=y#v=onepage&q=Medical%20Imaging%20Multimodality%20Breast%20Cancer%20Diagnosis%20User%20Interface&f=false
+
+% http://www.hindawi.com/journals/jo/2012/863747/
+
+% http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2906814/
+
+% https://books.google.pt/books?id=YSnOBgAAQBAJ&pg=PA120&lpg=PA120&dq=Medical+Imaging+Multimodality+Breast+Cancer+Diagnosis+User+Interface&source=bl&ots=OiNa82vjpJ&sig=mWT2ATZv-q--rA1_-62UQuikKJE&hl=en&sa=X&redir_esc=y#v=onepage&q=Medical%20Imaging%20Multimodality%20Breast%20Cancer%20Diagnosis%20User%20Interface&f=false
+
+% http://spie.org/Publications/Book/1000499
+
+
+
+
 \end{document}

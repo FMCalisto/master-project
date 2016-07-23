@@ -1,0 +1,77 @@
+%!TEX root = ./dissertation.tex
+
+% ---------------------------------------------------------
+%   MASTER THESIS DISSERTATION COVER
+% ---------------------------------------------------------
+\begin{titlepage}
+% ---------------------------------------------------------
+%  INSTITUTION LOGO
+% ---------------------------------------------------------
+\includegraphics[width=5cm]{images/ist_logo}~\\
+%
+\if\IsFinalVersion 1
+  \vspace*{\finalLogoSpacing}
+\else
+  \vspace*{\draftLogoSpacing}
+\fi
+
+\begin{center}
+% ---------------------------------------------------------
+%  MASTER THESIS DISSERTATION TITLE
+% ---------------------------------------------------------
+{\LARGE \textbf{\Title}}\\[1.0cm]
+% ---------------------------------------------------------
+%  MASTER THESIS DISSERTATION SUBTITLE
+% ---------------------------------------------------------
+{\Large \Subtitle}\\[1.0cm]
+% ---------------------------------------------------------
+%  AUTHOR NAME (FULL)
+% ---------------------------------------------------------
+{\Large \textbf{\StudentName}}\\[1.0cm]
+% ---------------------------------------------------------
+%  DISSERTATION DEGREE
+% -----------------------------------------------------------------
+{\large Master Project Report to obtain the Master of Science Degree in}\\[1.0cm]
+% -----------------------------------------------------------------
+%  COURSE NAME
+% -----------------------------------------------------------------
+{\LARGE \textbf{\DegreeName}}\\[1.0cm]
+
+% -----------------------------------------------------------------
+%  ADVISORS NAME
+% ---------------------------------------------------------
+\begin{minipage}[t]{.4\textwidth}
+  \center
+  \begin{flushright}
+    {\large Advisor:~~}
+  \end{flushright}
+  \begin{flushright}
+    {\large Co-Advisor:~~}
+  \end{flushright}
+\end{minipage}%
+\begin{minipage}[t]{.6\textwidth}
+  \center
+  \begin{flushleft}
+    {\Advisor}
+  \end{flushleft}
+  \begin{flushleft}
+    {\CoAdvisor}
+  \end{flushleft}
+\end{minipage}\\
+%
+\if\IsFinalVersion 1
+  \vspace*{\finalAdvisorsSpacing}
+\else
+  \vspace*{\draftAdvisorsSpacing}
+\fi
+
+\if\IsFinalVersion 1
+ \vspace*{\dateSpacing}
+\fi
+
+% ---------------------------------------------------------
+%  DATE (MONTH AND YEAR)
+% ---------------------------------------------------------
+{\Large \textbf{\Month\:\Year}}\\
+\end{center}
+\end{titlepage}
